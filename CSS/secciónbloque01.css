@@ -1,0 +1,100 @@
+.catalogo-container{
+    display: flex;
+    max-width: 1400px;
+    margin: 0px;
+    align-items: flex-start;
+    gap: 40px;
+    padding:25px;
+}
+/*Info lateral*/
+
+.info-lateral{
+    flex:  0 0 300px; /*ancho fijo para el texto de la izquierda*/
+}
+
+.titulo-section{
+font-size: 2.5rem;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.descripcion-section{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: rgb(31, 31, 31);
+}
+.carousel-dots{
+    display: flex;
+    gap: 10px;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.dot.active{
+    background-color: aquamarine;
+}
+/*/Grid de productos*/
+
+.productos-grid{
+    display: flex;
+    flex: 1;
+    gap: 25px;
+}
+.producto-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.producto-img{
+    height: 250 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.producto-img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.producto-info h3{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    margin-right: 40%;
+}
+.productos-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid transparent;
+}
+.categoria{
+    font-size: 0.8rem;
+    color: rgb(119, 69, 5);
+    letter-spacing: 1px;
+}
+.precio{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1024px){
+    .Catalogo-container{
+        flex-direction: column;
+    }
+    .producto-grid{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .producto-card{
+        min-width: 250px;
+    }
+}

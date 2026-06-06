@@ -1,0 +1,58 @@
+*{
+margin: 1px;
+padding: 1px;
+box-sizing: border-box;
+}
+
+
+/*CONFIGURACION DEL CUERPO PARA CENTRAR Y USAR UNA FUENTE*/
+
+body{
+    font-family: sans-serif;
+    color: rgb(50, 50, 50);
+    line-height: 1,6;
+    background-color: beige;
+}
+
+/*ESTILO PARA LA SECCION QUE CONTIENE LA IAMGEN DE GOOD*/
+
+.historia-seccion{
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding-top: 5rem;
+
+background-image: none;
+background-size: cover;
+background-position: center bottom;
+background-image: no-repeat;
+}
+.contenedor-texto{
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgb(220, 206, 155);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+/*ESTILO PARA TITULO PRINCIPAL*/
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/*ESTILO PARA PÁRRAFOS*/
+
+.parrafos p{
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
